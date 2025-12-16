@@ -1,22 +1,14 @@
-# Frontend (Vite + React) - Node 22 (required by newer Vite)
-FROM node:22-alpine
-
+FROM node:20-alpine AS build
 WORKDIR /app
 
-# Copy package files first (better caching)
 COPY package*.json ./
-
-# Install dependencies (reproducible)
 RUN npm ci
 
-# Copy source
 COPY . .
-
-# Build for production
 RUN npm run build
 
-# Vite preview port
-EXPOSE 5173
+FROM nginx:alpine
+COPY --from=build /app/dist /usr/share/nginx/html
 
-# Serve the built app
-CMD ["npm", "run", "preview", "--", "--host", "0.0.0.0", "--port", "5173"]
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]

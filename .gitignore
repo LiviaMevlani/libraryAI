@@ -1,0 +1,23 @@
+# secrets
+.env
+
+# python
+__pycache__/
+*.pyc
+
+# node
+node_modules/
+dist/
+
+# docker / local
+backups/
+local_dump.sql
+
+# ide / os
+.idea/
+.DS_Store
+
+# images / temp
+Screenshot*.png
+image.png
+.env

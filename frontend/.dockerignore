@@ -1,0 +1,9 @@
+cat <<'EOF' > frontend/.dockerignore
+node_modules
+dist
+.git
+.vscode
+.DS_Store
+npm-debug.log
+yarn-error.log
+EOF
