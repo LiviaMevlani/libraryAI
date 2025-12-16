@@ -1,0 +1,19 @@
+[
+  "tests/test_ai.py::test_ai_query_authorization",
+  "tests/test_ai.py::test_ai_query_invalid_intent",
+  "tests/test_ai.py::test_ai_query_malicious_prompts",
+  "tests/test_ai.py::test_ai_query_table_formatting",
+  "tests/test_ai.py::test_insights_comprehensive_data",
+  "tests/test_ai.py::test_insights_summary_generation",
+  "tests/test_ai.py::test_insights_user_scope",
+  "tests/test_ai.py::test_parse_intent_enhanced_patterns",
+  "tests/test_ai.py::test_parse_intent_malicious_inputs",
+  "tests/test_ai.py::test_parse_intent_valid_queries",
+  "tests/test_ai.py::test_recommendations_reason_field",
+  "tests/test_ai.py::test_recommendations_user_scope",
+  "tests/test_ai.py::test_sanitize_input",
+  "tests/test_auth.py::test_authenticate_user",
+  "tests/test_auth.py::test_register_user",
+  "tests/test_books.py::test_create_book",
+  "tests/test_books.py::test_delete_book"
+]
